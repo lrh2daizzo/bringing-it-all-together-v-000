@@ -50,7 +50,7 @@ class Dog
   end
 
   def self.create(name:, breed:)
-    Dog.new(name, breed).tap {|dog| dog.save}
+    Dog.new(name: name, breed: breed).tap {|dog| dog.save}
   end
 
 end
