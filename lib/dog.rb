@@ -39,7 +39,7 @@ class Dog
     if self.id
       self.update
     else
-      sql <<-SQL
+      sql = <<-SQL
         INSERT INTO dogs (name, breed)
         VALUES (?,?)
       SQL
